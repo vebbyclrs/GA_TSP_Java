@@ -78,6 +78,10 @@ public class Tour {
     public boolean mengandungKota (City cariKota) {
         return tour.contains(cariKota);
     }
+    
+    public int tourSize() {
+        return tour.size();
+    }
 //
 //    @Override
 //    public String toString() {
