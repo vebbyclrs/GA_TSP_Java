@@ -45,7 +45,7 @@ public class Population {
         return fittest;
     }
     
-    
-    
-    
+    public int populationSize() {
+        return tours.length;
+    }
 }

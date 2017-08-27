@@ -51,6 +51,16 @@ public class TSP {
         
         Population pop = new Population(20, true);
         System.out.println("Jarak awal: "+pop.getFittest().getJarakTur());
+        
+        pop = GA.evolvePopulation(pop);
+        for (int i = 0; i < 50; i++) {
+            pop = GA.evolvePopulation(pop);
+        }
+        
+        System.out.println("Kelaarr~");
+        System.out.println("jarak akhir: " + pop.getFittest().getJarakTur());
+//        System.out.println("Solution:");
+//        System.out.println(pop.getFittest());
     }
     
 }
